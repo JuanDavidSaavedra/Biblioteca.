@@ -1,12 +1,9 @@
 package vista;
 import javax.swing.JFrame;
-import modelo.LibroDeColeccion;
-import vista.PanelResultados;
-import vista.PanelOperaciones;
-import vista.PanelEntradaDatos;
 
 public class VentanaPrincipal extends JFrame
 {
+    //----------------------
     //Atributos
     //----------------------
     public PanelEntradaDatos miPanelEntradaDatos;
@@ -27,18 +24,18 @@ public class VentanaPrincipal extends JFrame
         
         //Creación y adición del PanelEntradaDatos
         miPanelEntradaDatos = new PanelEntradaDatos();
-        miPanelEntradaDatos.setBounds(10,10,660,250);
+        miPanelEntradaDatos.setBounds(10,10,660,300);
         add(miPanelEntradaDatos);
        
         
         //Creación y adición del PanelOperaciones
         miPanelOperaciones = new PanelOperaciones();
-        miPanelOperaciones.setBounds(10,260,660,80);
+        miPanelOperaciones.setBounds(10,290,660,80);
         add(miPanelOperaciones);
         
         //Creación y adición del PanelOperaciones
         miPanelResultados = new PanelResultados();
-        miPanelResultados.setBounds(10,340,660,310);
+        miPanelResultados.setBounds(10,370,660,280);
         add(miPanelResultados);
         
         //Caracteristicas de la ventana
@@ -52,7 +49,7 @@ public class VentanaPrincipal extends JFrame
     }
 
     //Crear ventana Libro de colección
-    public void crearDialogoJugador()
+    public void crearVentanaLibroColeccion()
     {
         miLibroDeColeccion = new LibroDeColeccion();
     }

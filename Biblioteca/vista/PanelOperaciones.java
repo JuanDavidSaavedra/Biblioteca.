@@ -32,13 +32,13 @@ public class PanelOperaciones extends JPanel
         //Creación y adicion de los botones
         btInfoLibro = new JButton("Mostrar info libro");
         btInfoLibro.setFont(new Font("Arial", BOLD, 12));
-        btInfoLibro.setBounds(10, 30, 140, 30);
+        btInfoLibro.setBounds(30, 30, 140, 30);
         add(btInfoLibro);
         btInfoLibro.setActionCommand("MostrarInfoLibro");
 
         btInfoLibroColeccion = new JButton("Mostrar info libro colección");
         btInfoLibroColeccion.setFont(new Font("Arial", BOLD, 12));
-        btInfoLibroColeccion.setBounds(160, 30, 150, 30);
+        btInfoLibroColeccion.setBounds(200, 30, 200, 30);
         add(btInfoLibroColeccion);
         btInfoLibroColeccion.setActionCommand("MostrarInfoLibroColeccion");
 
@@ -46,14 +46,14 @@ public class PanelOperaciones extends JPanel
         //Crear y agrear boton Borrar
         btBorrar = new JButton("Borrar");
         btBorrar.setFont(new Font("Arial", BOLD, 12));
-        btBorrar.setBounds(490, 30, 80, 30);
+        btBorrar.setBounds(430, 30, 80, 30);
         this.add(btBorrar);
         btBorrar.setActionCommand("borrar");
 
         //Crear y agrear boton Salir
         btSalir = new JButton("Salir");
         btSalir.setFont(new Font("Arial", BOLD, 12));
-        btSalir.setBounds(580, 30, 70, 30);
+        btSalir.setBounds(540, 30, 70, 30);
         this.add(btSalir);
         btSalir.setActionCommand("salir");
         

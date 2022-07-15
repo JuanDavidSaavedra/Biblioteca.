@@ -1,9 +1,13 @@
 package vista;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
+import javax.swing.border.TitledBorder;
+
+import java.awt.Color;
 
 
 
@@ -32,6 +36,7 @@ public class PanelEntradaDatos extends JPanel
     {
         //Definicion del contendor del panel
         setLayout(null);
+        setBackground(Color.WHITE);
         
         //Creación y adicion de la imagen
         iImagen = new ImageIcon(getClass().getResource("Biblioteca.png"));
@@ -40,23 +45,23 @@ public class PanelEntradaDatos extends JPanel
         add(lbImagen);
         
         //Creación y adición de etiquetas
-        lbNomLib = new JLabel("Nombre del libro = ");
+        lbNomLib = new JLabel("Nombre del libro: ");
         lbNomLib.setBounds(276,30,250,30);
         add(lbNomLib);
         
-        lbNomAutor = new JLabel("Nombre del autor = ");
+        lbNomAutor = new JLabel("Nombre del autor: ");
         lbNomAutor.setBounds(276,80,250,30);
         add(lbNomAutor);
         
-        lbNomAutores = new JLabel("Nombre de los demás autores = ");
+        lbNomAutores = new JLabel("Nombre de los demás autores: ");
         lbNomAutores.setBounds(276,130,250,30);
         add(lbNomAutores);
 
-        lbAnioEdicion = new JLabel("Año de edición = ");
+        lbAnioEdicion = new JLabel("Año de edición: ");
         lbAnioEdicion.setBounds(276,180,250,30);
         add(lbAnioEdicion);
 
-        lbTipoEdicion = new JLabel("¿Es una edición de lujo? (1: Sí; 2: No)");
+        lbTipoEdicion = new JLabel("Marca la opción si es una edición de lujo: ");
         lbTipoEdicion.setBounds(276,230,250,30);
         add(lbTipoEdicion);
         
@@ -80,6 +85,11 @@ public class PanelEntradaDatos extends JPanel
         rbTipoEdicion = new JRadioButton();
         rbTipoEdicion.setBounds(526, 230, 120, 30);
         add(rbTipoEdicion);
+
+        //Borde y titulo del panel
+        TitledBorder borde = BorderFactory.createTitledBorder("Datos de Entrada");
+        borde.setTitleColor(Color.BLUE);
+        setBorder(borde);
     }
     
     //Metodos de acceso a la información de las cajas de texto

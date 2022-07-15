@@ -33,7 +33,7 @@ public class PanelResultados extends JPanel
         //Creación y adicion del area de texto
         taResultado = new JTextArea();
         spResultado = new JScrollPane(taResultado);
-        spResultado.setBounds(10,20, 560, 280);
+        spResultado.setBounds(10,20, 560, 250);
         add(spResultado);
        
         //Borde y titulo del panel
@@ -55,7 +55,7 @@ public class PanelResultados extends JPanel
         taResultado.append(msg + "\n");
     }
 
-    public void agregarOyentesBotones(ActionListener pAL)
+    public void agregarOyentesBotones2(ActionListener pAL)
     {
         btLimpiar.addActionListener(pAL);
     }

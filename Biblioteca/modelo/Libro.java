@@ -50,7 +50,6 @@ public class Libro
         this.nombreAutores = nombreAutores;
     }
 
-
     public int getAnioEdicion() {
         return anioEdicion;
     }
@@ -66,9 +65,34 @@ public class Libro
     public void setTipoEdicion(boolean tipoEdicion) {
         this.tipoEdicion = tipoEdicion;
     }
+    
+    //Atributos de LibroDeColeccion
+    private String nombreColeccion;
+    private int numeroLibroColeccion;
 
-    public String toString()
+    public void LibroDeColeccion()
     {
-        return "Nombre del libro: " + nombreLibro + "\nNombre del/los autor/es" + nombreAutor + nombreAutores + "\nAño de edición: " + anioEdicion + "\n¿Es una edición de lujo?: " + tipoEdicion;
+    }
+
+    public void LibroDeColeccion(String nombreColecccion, int numeroLibroColeccion)
+    {
+        this.nombreColeccion = nombreColecccion;
+        this.numeroLibroColeccion = numeroLibroColeccion;
+    }
+
+    public String getNombreColeccion() {
+        return nombreColeccion;
+    }
+
+    public void setNombreColeccion(String nombreColeccion) {
+        this.nombreColeccion = nombreColeccion;
+    }
+
+    public int getNumeroLibroColeccion() {
+        return numeroLibroColeccion;
+    }
+
+    public void setNumeroLibroColeccion(int numeroLibroColeccion) {
+        this.numeroLibroColeccion = numeroLibroColeccion;
     }
 }
